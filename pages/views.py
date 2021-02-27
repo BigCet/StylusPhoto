@@ -2,11 +2,13 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def home_view(reqvest):
-    return HttpResponse("Hello World")
+    return render(reqvest, "home.html")
 
 def contact_view(reqvest):
-    return HttpResponse("Contakt page")
+    return render(reqvest, "contact.html")
 
 def about_view(reqvest):
-    return HttpResponse("About page")
+    return render(reqvest, "about.html")
 
+def gallery_view(reqvest):
+    return render(reqvest, "gallery.html")
