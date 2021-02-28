@@ -3,7 +3,12 @@
 <title>{% block title %} Home {% endblock title  %}</title>
 
 {% block body %}
-    <h1>Szia it az oldalamon</h1>
+    <h1>Üdvözöllek itt az oldalamon!</h1>
+
+
+{%for i in names%}
+<h3>{{i}}</h3>
+{%endfor%}
 
 <div class="blue-box"></div>
 
