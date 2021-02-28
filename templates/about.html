@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
-<body>
-    <h1>About lap</h1>
-    {% include '_menu.html' %}
-</body>
-</html>
+{% extends "_base.html" %}
+
+<title>{% block title %} About {% endblock title  %}</title>
+
+{% block body %}
+    <h1>About lapja</h1>
+
+{% endblock body  %}
