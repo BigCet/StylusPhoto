@@ -9,7 +9,9 @@ h1, h2, h3{
 }
 
 .navbar{
-    background-color: black;
+    background-color: #393f44;
+    margin: 20px;
+    padding: 10px;
 
 }
 
