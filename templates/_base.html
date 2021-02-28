@@ -15,11 +15,19 @@
 
 </head>
 <body>
-    <h1 >Stylus Photo Project!</h1>
+
+    <div class="content-container">
+        {% include '_header.html' %}
+    </div>
+
     {% include '_menu.html' %}
 
-    {% block body %}
-    {% endblock body  %}
+    <div class="content-container">
+        {% block body %}
+        {% endblock body  %}
+
+    </div>
+
 
     <fute>agrimon67@gmail.com</fute>
 
