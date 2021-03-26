@@ -1,19 +1,28 @@
 {% extends "_base.html" %}
 
-<title>{% block title %} Home {% endblock title  %}</title>
+{% block title %} Home {% endblock title  %}
 
 {% block body %}
-    <h1>Üdvözöllek itt az oldalamon!</h1>
+
+    <div class="home-container">
+        <div>
+            {% for photo in photos %}
+                 <img src={{photo}} alt="">
+            {% endfor %}
+        </div>
+
+        <div>
+            <div class="sticky-container">
+                <h1>{{ titles }}</h1>
+                <h3>{{ subtitles }}</h3>
+                <p>{{ content }}</p>
+            </div>
+
+        </div>
+
+    </div>
 
 
-{%for i in names%}
-<h3>{{i}}</h3>
-{%endfor%}
-
-<div class="blue-box"></div>
-
-
-    <p> Lorem kjsfd SEDFsdkjfHSD FAsdlfajhSEDF ASDGFLAJHSD GADSCHJjjkfdas dfvasdfa gafda adbadfsansf badfbsadfbjhsfgdbsfghsfgns  syfg sgfdsyfg</p>
 
 
 
